@@ -142,7 +142,7 @@ function PhoneBook() {
       </Row>
       <Row>
         <Col>
-          {filteredContacts.map(contact => (
+          {(filteredContacts.length === 0) ? <p>No contacts to display.</p> : filteredContacts.map(contact => (
             <Card key={contact._id}>
               <Card.Body className="text-right" >
                 <Card.Title>{contact.fname} {contact.lname}</Card.Title>
