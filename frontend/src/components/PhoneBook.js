@@ -134,7 +134,7 @@ function PhoneBook() {
         <Col>
           <Form.Control
             type="text"
-            placeholder="Search for contact by last name..."
+            placeholder="Search for contact by name or number..."
             onChange={handleSearch}
             value={searchTerm}
           />
