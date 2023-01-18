@@ -28,7 +28,7 @@ function PhoneBook() {
   }, []);
 
   const handleDelete = (id) => {
-    fetch(`http://localhost:8085//contactapp/api/v1/contacts/${id}`, {
+    fetch(`http://localhost:8085/contactapp/api/v1/contacts/${id}`, {
       method: 'DELETE'
     })
       .then(res => res.json())
